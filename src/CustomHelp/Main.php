@@ -12,7 +12,7 @@ class Main extends PluginBase implements Listener{
     }
 
     public function onPlayerCommand(PlayerCommandPreprocessEvent $event){
-        $player= $event->getPlayer();
+        $player = $event->getPlayer();
         $message = $event->getMessage();
         $command = substr($message, 1);
         $args = explode(" ", $command);
