@@ -13,12 +13,9 @@ class Main extends PluginBase implements Listener{
 
     public function onPlayerCommand(PlayerCommandPreprocessEvent $event){
         $player= $event->getPlayer();
-        $owner = $player->getName();
         $message = $event->getMessage();
         $command = substr($message, 1);
         $args = explode(" ", $command);
-        $name = $event->getPlayer()->getName();
-        $name = strtolower($name);
         if($args[0] === "help"){
             //messages
             $event->setCancelled(true);
