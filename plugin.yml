@@ -1,0 +1,6 @@
+Main: xFlare/CustomHelp/Main
+author: xFlare
+description: Overides the /help command
+api: [1.8.0]
+website: https://github.com/xxFlare
+name: CustomHelp
